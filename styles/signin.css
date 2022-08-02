@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0e0e;
+  font-family: "Space Grotesk", sans-serif;
+  height: 100vh;
+}
+.nav-bar {
+  display: flex;
+  background-color: #2e2e2e;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem 8rem;
+  /* margin-bottom: 128px; */
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ff8a2e;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container-content {
+  border-radius: 1rem;
+  width: 45rem;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 125px;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+/* .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} */
+.form-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.form-control input {
+  border-radius: 0.5rem;
+  width: 29.375rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #0e0e0e;
+  border: 1px solid #6f6f6f;
+}
+.forget-para {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.forget-para a {
+  text-decoration: none;
+  color: white;
+}
+.create-link {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+.create-link a {
+  color: #ff8a2e;
+  text-decoration: none;
+}
+input[type="submit"] {
+  background-color: #ff8a2e;
+  color: #0e0e0e;
+  font-weight: 600;
+  font-size: 1rem;
+}
+input::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+@media screen and (max-width: 1728px) {
+  .container-content {
+    padding: 50px 128px;
+  }
+}

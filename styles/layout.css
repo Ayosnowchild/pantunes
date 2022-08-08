@@ -1,0 +1,246 @@
+@import url("base.css");
+body {
+  background-color: #0a0a0a;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a0a0a;
+}
+nav {
+  display: flex;
+  background: #2e2e2e;
+  border-bottom: 1px solid #6f6f6f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  height: 88px;
+  position: fixed;
+  width: 100%;
+}
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--orange);
+}
+a {
+  text-decoration: none;
+}
+.icons-div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+input[type="Search"] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 524px;
+  height: 56px;
+  background: var(--deep-gray);
+  border: 0.5px solid #6f6f6f;
+  border-radius: 8px;
+  color: var(--pure-white);
+}
+input[type="Search"]:focus {
+  border: 1.5px solid #6f6f6f;
+  outline: none;
+}
+input[type="Search"]::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--pure-white);
+  background: url(../pantfiles/search-ikon.png);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  padding-left: 2.1875rem;
+}
+.profile-image img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+  /* height: 100%; */
+}
+.side-bar {
+  width: 304px;
+  height: 100%;
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+}
+.side-small {
+  width: 72px;
+  background-color: #0a0a0a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-top: 32px;
+  padding-left: 24px;
+}
+.side-big {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  padding-right: 32px;
+}
+.links-container a {
+  padding-left: 24px;
+}
+.links-container {
+  width: 200px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 16px; */
+  border-radius: 0px 8px 8px 0px;
+}
+.side-bar-para {
+  font-weight: 500;
+  color: #ffffff;
+}
+#active-para-div {
+  background-color: #0a0a0a;
+}
+#active-side-para {
+  color: #ff8a2e;
+}
+#active-icon {
+  background-color: #ff8a2e;
+}
+#active-icon svg path {
+  fill: var(--deep-gray);
+  stroke: var(--deep-gray);
+}
+.side-icons {
+  background-color: #2e2e2e;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  padding: 7.75px 7.26px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+#active-icon {
+  background: #ff8a2e;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  padding: 7.75px 7.26px;
+  /* margin-top: 10px; */
+}
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 64px 38px 64px;
+  gap: 32px;
+  margin-left: 304px;
+  margin-bottom: 132px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2e2e2e;
+  border-top: 1px solid #6f6f6f;
+  padding: 24px 72px;
+  gap: 166px;
+  height: 132px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.track-info {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.track-cover {
+  background-image: url("../pantfiles/damini.png");
+  width: 76px;
+  height: 76px;
+  border-radius: 2px;
+  border: 0.5px solid #6f6f6f;
+}
+.playing-track {
+  font-weight: 500;
+}
+.playing-artiste {
+  font-weight: 300;
+  font-size: 12px;
+}
+.player-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.track-controls {
+  display: flex;
+  gap: 12px;
+}
+.player-icons {
+  background: #0a0a0a;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.track-time {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.t-start {
+  font-weight: 400;
+  font-size: 12px;
+}
+.t-end {
+  font-weight: 400;
+  font-size: 12px;
+}
+.progress-bar {
+  width: 600px;
+  height: 8px;
+  background: #0a0a0a;
+  color: #0a0a0a;
+  border-radius: 4px;
+  padding: 2px;
+}
+.track-actions {
+  display: flex;
+  gap: 16px;
+}
+progress[value]::-webkit-progress-value {
+  color: #ff8a2e;
+  background-color: #ff8a2e;
+  border-radius: 2px;
+}
+progress[value]::-webkit-progress-bar {
+  background: #0a0a0a;
+}

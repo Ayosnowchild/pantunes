@@ -1,138 +1,206 @@
 @import url("base.css");
-body {
-  background-color: #0a0a0a;
-  height: 100vh;
+@import url("layout.css");
+/* for home/all-tracks */
+.ads-container {
+  background-image: url("../pantfiles/Ads.png");
+  width: 70rem;
+  height: 22rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
 }
-.container {
+.section-header {
+  color: var(--pure-white);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.featured-albums {
+  max-width: 70rem;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.featured-albums::-webkit-scrollbar {
+  display: none;
+}
+.albums {
+  display: flex;
+  color: var(--pure-white);
+  align-items: center;
+  width: 416px;
+  height: 152px;
+}
+.album-art {
+  background-image: url("../pantfiles/TAT.png");
+  width: 152px;
+  height: 152px;
+  border-radius: 8px 0px 0px 8px;
+}
+.album-description {
+  padding: 26px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  width: 100vw;
-  background-color: beige;
+  background-color: var(--gray);
+  border-radius: 0px 8px 8px 0px;
+  height: 152px;
+  width: 264px;
 }
-nav {
-  display: flex;
-  background: #2e2e2e;
-  border-bottom: 1px solid #6f6f6f;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
-  height: 88px;
+.album-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 4px;
 }
-h1 {
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--orange);
-}
-a {
-  text-decoration: none;
-}
-.icons-div {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.action-icons {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-input[type="Search"] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 524px;
-  height: 56px;
-  background: var(--deep-gray);
-  border: 0.5px solid #6f6f6f;
-  border-radius: 8px;
-  color: var(--pure-white);
-}
-input[type="Search"]:focus {
-  border: 1.5px solid #6f6f6f;
-  outline: none;
-}
-input[type="Search"]::placeholder {
+.album-artiste {
   font-weight: 400;
   font-size: 16px;
-  color: var(--pure-white);
-  background: url(../pantfiles/search-ikon.png);
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  padding-left: 2.1875rem;
+  margin-bottom: 16px;
 }
-.profile-image img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+.genre-container {
+  max-width: fit-content;
+  height: 32px;
+  background-color: #ff8a2e;
+  border-radius: 16px;
+  padding: 8px;
 }
-.content-container {
+.album-genre {
+  color: #0a0a0a;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.now-playing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.now-playing-text {
+  font-weight: 700;
+  font-size: 32px;
+  color: #ffffff;
+}
+.now-playing-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.now-playing-cards {
+  background: #2e2e2e;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
-  height: 100%;
-}
-.side-bar {
-  width: 304px;
-  height: 100%;
-  background-color: #2e2e2e;
-  display: flex;
-  align-items: flex-start;
-}
-.side-small {
-  width: 72px;
-  background-color: #0a0a0a;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 35px;
-  padding-top: 24px;
-  padding-left: 24px;
-}
-.side-big {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-top: 24px;
-  align-items: center;
+  padding: 16px;
+  gap: 24px;
+  height: 64px;
   color: #ffffff;
 }
-.links-container a {
-  padding-left: 24px;
+#active-now-playing {
+  background: #311914;
 }
-.links-container {
-  width: 200px;
-  height: 51px;
+.playing-icons {
+  background: #0a0a0a;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+.track-wavelines {
+  width: 80px;
+}
+.track-wavelines svg line {
+  stroke: var(--gray);
+}
+#track-waves {
+  display: block;
+  width: 80px;
+}
+.now-playing-cards p {
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* for all-tracks */
+.all-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* for playlist */
+.page-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: var(--pure-white);
+}
+
+.playlist-row {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.playlist-card {
+  width: 20.5625rem;
+  height: 20.5625rem;
+
+  background-position: center;
+  background-size: cover;
+  margin-right: 32px;
+  border-radius: 8px;
+  border: 0.5px solid #6f6f6f;
+  display: flex;
+  align-items: flex-end;
+}
+#playlist-card-one {
+  background-image: url("../pantfiles/spotify-bg.png");
+}
+#playlist-card-two {
+  background-image: url("../pantfiles/okay-bg.png");
+}
+#playlist-card-three {
+  background-image: url("../pantfiles/sigma-bg.png");
+}
+#playlist-card-four {
+  background-image: url("../pantfiles/design-bg.png");
+}
+#playlist-card-five {
+  background-image: url("../pantfiles/startup-bg.png");
+}
+#playlist-card-six {
+  background-image: url("../pantfiles/diary-bg.png");
+}
+.playlist-description {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gray);
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+  padding: 24px;
+  color: var(--pure-white);
+}
+
+.playlist-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.playlist-caption {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.playlist-icon {
   display: flex;
   align-items: center;
-  /* padding-bottom: 16px; */
-  border-radius: 0px 8px 8px 0px;
-}
-.side-bar-para {
-  font-weight: 500;
-  color: #ffffff;
-}
-#active-para-div {
-  background-color: #0a0a0a;
-}
-#active-side-para {
-  color: #ff8a2e;
-}
-.side-icons {
-  background-color: #2e2e2e;
-  height: 32px;
-  width: 32px;
-  border-radius: 4px;
-  padding: 7.75px 7.26px;
-  display: flex;
-  align-items: center;
-  margin-right: 16px;
-}
-#active-icon {
-  background: #ff8a2e;
-  height: 32px;
-  width: 32px;
-  border-radius: 4px;
-  padding: 7.75px 7.26px;
-  margin-top: 10px;
+  justify-content: center;
+  background-color: var(--orange);
+  border-radius: 16px;
+  height: 56px;
+  width: 56px;
 }

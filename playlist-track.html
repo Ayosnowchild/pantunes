@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>All Tracks</title>
+    <title>Playlist Track</title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                             </a>
                         </svg>
                     </div>
-                    <div class="side-icons" id="active-icon">
+                    <div class="side-icons">
                         <!-- all tracks -->
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <a href="./alltracks.html">
@@ -61,7 +61,7 @@
                             </a>
                         </svg>
                     </div>
-                    <div class="side-icons">
+                    <div class="side-icons" id="active-icon">
                         <!-- playlist -->
                         <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <a href="./playlist.html">
@@ -94,14 +94,14 @@
                             <p class="side-bar-para">Home</p>
                         </a>
                     </div>
-                    <div class="links-container" id="active-para-div">
+                    <div class="links-container">
                         <a href="./alltracks.html">
-                            <p class="side-bar-para" id="active-side-para">All Tracks</p>
+                            <p class="side-bar-para">All Tracks</p>
                         </a>
                     </div>
-                    <div class="links-container">
+                    <div class="links-container" id="active-para-div">
                         <a href="./playlist.html">
-                            <p class="side-bar-para">Playlist</p>
+                            <p class="side-bar-para" id="active-side-para">Playlist</p>
                         </a>
                     </div>
                     <div class="links-container">
@@ -117,8 +117,23 @@
                 </div>
             </div>
             <div class="main-content">
-                <div class="all-tracks">
-                    <p class="now-playing-text">All Tracks</p>
+                <div class="first-container">
+                    <a href="./playlist.html">
+                        <div class="playlist-track-icon">
+                            <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 11.0013H25M10.3333 20.3346L1 11.0013L10.3333 20.3346ZM1 11.0013L10.3333 1.66797L1 11.0013Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </a>
+                    <p class="now-playing-text">A Product Story</p>
+                </div>
+                <div class="play-list-bg">
+                    <img src="./pantfiles/spotify-bg.png" alt="">
+                </div>
+                <div class="now-playing">
                     <div class="now-playing-cards-container">
                         <div class="now-playing-cards" id="active-now-playing">
                             <div class="playing-icons">

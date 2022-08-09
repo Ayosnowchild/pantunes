@@ -83,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 70rem;
 }
 .now-playing-cards {
   background: #2e2e2e;
@@ -92,6 +93,7 @@
   align-items: center;
   padding: 16px;
   gap: 24px;
+  width: 100%;
   height: 64px;
   color: #ffffff;
 }
@@ -118,11 +120,15 @@
   display: block;
   width: 80px;
 }
-.now-playing-cards p {
+.playing-para {
   font-weight: 400;
   font-size: 16px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 317.33px;
+}
+.now-playing-time {
+  width: 80px;
 }
 /* for all-tracks */
 .all-tracks {
@@ -204,3 +210,37 @@
   height: 56px;
   width: 56px;
 }
+/* playlist-track */
+.first-container {
+  display: flex;
+  align-items: center;
+}
+.play-list-bg {
+  background-image: url("../pantfiles/playlist-bg.png");
+  width: 70rem;
+  height: 472px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 68px 68px 68px 712px;
+}
+.play-list-bg img {
+  width: 336px;
+  height: 336px;
+  border-radius: 16px;
+}
+.playlist-track-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+  border-radius: 4px;
+  height: 48px;
+  width: 48px;
+  margin-right: 24px;
+}
+/* 
+1 after removing featured, create a div for arrow and title
+2 then the second div will be the one to hold the background
+leave now playing div alone
+the div for arrow and bg should be sisters inside main content*/

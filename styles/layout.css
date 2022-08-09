@@ -209,7 +209,7 @@ input[type="Search"]::placeholder {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding-top: 10px;
+  align-items: center;
 }
 .track-time {
   color: #ffffff;
